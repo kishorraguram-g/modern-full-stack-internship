@@ -1,0 +1,54 @@
+flex wrap- no wrap by default
+align content - no default value
+
+grid:
+    
+    grid-template-columns:repeat(noOfTimes,size)
+    grid-template-rows:repeat(noOfTimes,size)
+    
+for items: use nth-child
+    choose like grid-column-start: 1; grid-column-end: -1;
+
+media queries pixel ranges based on screen size:
+    - Extra small devices (phones): max-width: 600px
+    - Small devices (tablets): 601px to 900px
+    - Medium devices (desktops): 901px to 1200px
+    - Large devices (large desktops): 1201px and above
+
+
+scope of javaScript:
+    -min length=0
+    //hoisting global scope
+    var a=10;
+    console.log(a);
+
+    Temporal Dead Zone(TDZ):
+        time gap between memory allocation and value allocation:
+            eg:
+                console.log(b) then
+                let b=10
+                //causes Invalid reference error
+    
+    function types : 5
+        1->  Normal function
+            function add(a,b){
+                return a+b;
+            }
+        2->  Function expression
+            const add = function(a,b){
+                return a+b;
+            }
+        3->  Arrow function
+            const add = (a,b) => {
+                return a+b;
+            }   
+        4->  Immediately Invoked Function Expression (IIFE)
+            (function() {       
+                console.log("I am an IIFE");
+            })();
+        5->  Constructor function
+            function Person(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            const person1 = new Person("John", 30);

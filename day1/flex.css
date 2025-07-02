@@ -1,0 +1,19 @@
+.fle{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    color: yellow;
+    text-align: center;;
+}
+.flexi{
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+}
+
+.flexi>:nth-child(4){
+    justify-self: flex-end;
+    align-self: flex-end;
+    order: 1;
+}
